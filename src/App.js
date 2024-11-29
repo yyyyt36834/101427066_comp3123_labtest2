@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardImage,
+  MDBCol,
+  MDBContainer,
+  MDBIcon,
+  MDBRipple,
+  MDBRow,
+  MDBTypography,
+} from "mdb-react-ui-kit"
+
 import './App.css';
+import WeatherList from './Components/WeatherList'; // Check this path
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="vh-100" style={{ backgroundColor: "#eee" }} >
+        <WeatherList />
     </div>
   );
 }
